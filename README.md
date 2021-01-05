@@ -8,16 +8,17 @@
     > https://blog.echobind.com/a-guide-for-restful-apis-with-node-sequelize-postgres-63636d026d5d <br>
 
 - Step
-    > yarn add dotenv <br>
-    > setup package.json "dev": "nodemon -r dotenv/config app.js" <br>
-    > create .env file <br>
-    > yarn add pg pg-hstore, sequelize, sequelize-cli <br>
-    > yarn sequelize-cli init (sequelize project bootstrapping) <br>
-    > rename config/config.json to config/config.js <br>
-    > add require('dotenv).config() to config.js <br>
-    > add const { DB_HOST, DB_USERNAME, DB_PASSWORD } = process.env to config.js <br>
-    > replace username, password, host, and rename database <br>
-    > set module.exports <br>
+    > setup <br>
+        > yarn add dotenv <br>
+        > setup package.json "dev": "nodemon -r dotenv/config app.js" <br>
+        > create .env file <br>
+        > yarn add pg pg-hstore, sequelize, sequelize-cli <br>
+        > yarn sequelize-cli init (sequelize project bootstrapping) <br>
+        > rename config/config.json to config/config.js <br>
+        > add require('dotenv).config() to config.js <br>
+        > add const { DB_HOST, DB_USERNAME, DB_PASSWORD } = process.env to config.js <br>
+        > replace username, password, host, and rename database <br>
+        > set module.exports <br>
     > create new db <br>
         > add "db:create": "sequelize-cli db:create" to package.json <br>
     > create model & migration <br>
